@@ -1,0 +1,89 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray", "wireplumber", "cpu", "memory", "clock"],
+    "sway/window": {
+        "max-length": 50
+    },
+
+"memory": {
+    "interval": 30,
+    "format": "{}% ",
+    "max-length": 10
+},
+
+
+"gamemode": {
+    "format": "{glyph}",
+    "format-alt": "{glyph} {count}",
+    "glyph": "",
+    "hide-not-running": true,
+    "use-icon": true,
+    "icon-name": "input-gaming-symbolic",
+    "icon-spacing": 4,
+    "icon-size": 20,
+    "tooltip": true,
+    "tooltip-format": "Games running: {count}"
+},
+
+
+
+
+
+"wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "on-click": "pavucontrol",
+    "format-icons": ["", "", ""]
+},
+
+
+
+"tray": {
+    "icon-size": 21,
+    "spacing": 10
+},
+
+
+
+
+
+
+
+
+
+"network": {
+    "interface": "wlan0",
+    "format": "{ifname}",
+    "format-wifi": "{essid} ({bandwidthDownBits}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+},
+
+
+
+    "hyprland/workspaces": {
+     "format": "{icon}"
+         },
+    "cpu": {
+    "interval": 10,
+    "format": "{}% ",
+    "max-length": 10
+   },  
+
+    "backlight": {
+    "device": "lg_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""]
+    },	
+    
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    }
+}
