@@ -1,2 +1,2 @@
-# Dotfiles and Wallpapers
-My configs and some of my wallpapers :)
+# Laptop Dotfiles
+My laptop configs
