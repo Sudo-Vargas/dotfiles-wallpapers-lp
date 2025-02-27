@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "wireplumber", "cpu", "memory", "clock"],
+    "modules-right": ["tray", "network", "wireplumber", "memory", "battery", "clock"],
     "sway/window": {
         "max-length": 50
     },
@@ -56,11 +56,11 @@
 "network": {
     "interface": "wlan0",
     "format": "{ifname}",
-    "format-wifi": "{essid} ({bandwidthDownBits}%) ",
+    "format-wifi": "{essid} ",
     "format-ethernet": "{ipaddr}/{cidr} 󰊗",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-wifi": "{essid} ",
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
